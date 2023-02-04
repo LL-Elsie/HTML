@@ -8,8 +8,16 @@
     <!-- 
         1.0 超链接标签 
             1）页面跳转功能===不同1页面的跳转功能
-                基本语法：<a href="路径：页面的路径">文本/图片</a>
+                基本语法：<a href="路径：页面的路径" target="">文本/图片</a>
+            
+            
+                注意事项：
+                    1）超链接默认是自带下划线的效果，有一个蓝色的文本效果
+                    2）默认是在自己窗口中打开
+                    3）target的取值默认值为_self（在自己窗口打开）   _blank（新窗口打开）
      -->
-    <a href="http://www.baidu.com">跳转到百度</a>
+    <a href="http://www.baidu.com" target="_self">跳转到百度</a>
+    <a href="10_标签7.html" target="_blank">图片</a>
+    <a href="#">返回顶部</a>
 </body>
 </html>

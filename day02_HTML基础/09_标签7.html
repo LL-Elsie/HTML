@@ -12,15 +12,23 @@
             路径:
                 1)如果图片和页面文件是同级关系，则图片的名字就可以当做路径使用（路径名要写上）
                 2)如果你的图片所在的文件夹和页面是同级别关系的话，则需要先进入到文件夹中然后再去找图片   img/图片
-                3）
+                3）如果你的页面文件夹和图片是同级关系的话，则需要返回上一级去查找图片，返回上一级使用的是 ../图片   ../img/图片
+            路径：
+                1）相对路径：
+                    相对于文件和文件夹之间的关系去查找图片
+                        img/pic.png      ../img/pic.png
+                2）绝对路径：
+                    一个完整的地址，从某一个盘符开始，或者是从互联网地址开始
+                    如：
+                    C://study/img/pic.png
+                    http://www.baidu.com/pic.png
      -->
 
     <!-- 插入image2图片 -->
-    <img src="image2.jpg" alt="">
+    <img src="image2.jpg" />
 
     <!-- 插入image1图片 -->
-    <img src="img/image1.jpg" alt="">
-
+    <img src="img/image1.jpg" />
 
 </body>
 </html>

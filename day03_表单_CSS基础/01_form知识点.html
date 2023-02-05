@@ -12,12 +12,25 @@
             <form action="提交跳转地址" method="提交方法">
                 文本/其他表单控件（输入框、密码框、单选、多选等等）
             </form>
+
+
+            action=====提交跳转地址，点击按钮的时候，配合form，能实现跳转
+
+            method=====提交方法
+                get==明文提交：密码啥的都能在地址栏中看到====安全性低
+                post==密文提交：密码啥的都不能在地址栏中看到====安全性较高
      -->
 
     <h1>注册登录页面</h1>
-    <form action="">
-        用户名：<input type="text"><br>
-        密码框：<input type="password"><br>
+    <form action="http://www.baidu.com">
+        <!-- 
+            name===应用在输入框和密码框中，
+            主要作用：给输入框和密码框起一个名字
+            name属性的取值用来暂存你输入的数据的值
+        -->
+        用户名：<input type="text" name="user"><br>
+        密码框：<input type="password" name="upwd"><br>
+        <input type="submit">
     </form>
 </body>
 </html>

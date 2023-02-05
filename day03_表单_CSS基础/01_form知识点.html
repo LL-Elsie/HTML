@@ -19,10 +19,16 @@
             method=====提交方法
                 get==明文提交：密码啥的都能在地址栏中看到====安全性低
                 post==密文提交：密码啥的都不能在地址栏中看到====安全性较高
+
+            target====打开方式：新页面、原来页面
+                _self ,自己窗口打开
+                _blank，新窗口打开
+                _top,顶部窗口打开
+                _parent，父级框架打开
      -->
 
     <h1>注册登录页面</h1>
-    <form action="http://www.baidu.com">
+    <form action="http://www.baidu.com" method="get" target="_blank">
         <!-- 
             name===应用在输入框和密码框中，
             主要作用：给输入框和密码框起一个名字

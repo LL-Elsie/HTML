@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1.表单控件介绍
+            就是表单中的输入框、密码框、下拉菜单、单选多选等===类似于一个按钮
+            基本语法：<input type="类型">   ===单标签
+        1）输入框--单行文本输入框
+            文本不会折行显示，能显示你输入的信息
+            type="text"
+        2）密码框
+            加密效果，不同的浏览器显示的加密效果有可能不同
+            type="password"
+
+        3）按钮类型的标签
+            <input type="类型">
+            a）提交
+                type="submit"
+                作用：配合form标签以及action实现提交跳转功能
+                value属性：给按钮进行一个值显示，修改按钮中的默认文本
+
+            b）重置按钮
+                type="reset"
+                作用：配合form标签用来取消输入框前面输入的所有信息，把原来的信息清空掉
+
+            c）普通按钮
+                type="button"
+                作用：任何作用都没有，只是一个按钮
+                普通按钮中显示文本：value属性
+
+
+        给input添加一个value属性===给输入框一个值让你显示
+            提示文本===占位置
+        H5===placeholder==占位符，用来提示文本信息,不需要删除原来的提示信息，做到一个很好的增强用户体验度
+
+
+        问题：实际开发时，会使用哪一个按钮
+                使用普通按钮比较多；
+                考虑：给按钮添加一个事件
+     -->
+
+    <form action="http://www.baidu.com">
+        输入框：<input type="text" placeholder="请输入用户名"><br>
+        密码框：<input type="password" placeholder="请输入密码">
+        <br>
+        <input type="submit" value="登录">
+        <input type="reset">
+        <input type="button" value="button按钮">
+    </form>
+    
+</body>
+</html>

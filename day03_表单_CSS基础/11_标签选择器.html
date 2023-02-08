@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 内部样式表 -->
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        p {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <!-- 
         标签选择器
+            强调：匹配的是页面中叫对应标签名字的元素，无论级别嵌套有多深，都能被匹配到
      -->
      <div>我是一个div标签</div>
      <p>我是一个p标签</p>
-     <div>我是一个div标签</div>
+     <div>我是一个div标签
+        <p>我是div里面的p标签</p>
+     </div>
      <p>我是一个p标签</p>
      <div>我是一个div标签</div>
      <p>我是一个p标签</p>

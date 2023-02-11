@@ -12,9 +12,42 @@
             height: 200px;
             background-color: red;
         }
+        /* 实现效果 */
+        /* 当我鼠标悬停在红色盒子上面的时候，改变背景颜色为黄色 */
+        .red:hover{
+            background-color: yellow;
+        }
+
+        .green {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .purple{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        /* 当鼠标悬停在绿色盒子上面的时候，改变绿色盒子的背景颜色 */
+        /* .green:hover{
+            background-color: orange;
+        } */
+
+        /* 当鼠标悬停在绿色盒子上面的时候，改变的是里面子元素的背景元素 */
+        /* .green:hover>.purple{
+            background-color: blue;
+        } */
+
+        /* 当鼠标移入到紫色盒子的时候，改变的是自己本身的背景颜色 */
+        .green>.purple:hover{
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
     <div class="red"></div>
+    <div class="green">
+        <div class="purple"></div>
+    </div>
 </body>
 </html>

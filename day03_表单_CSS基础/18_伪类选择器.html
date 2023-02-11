@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: black;
+        }
+        /* 超链接访问前 */
+        /* a:link{
+            color: red;
+        } */
+        /* 鼠标访问后的样式 */
+        /* a:visited{
+            color: yellow;
+        } */
+        /* 鼠标悬停上去的样式 */
+        a:hover{
+            color: aqua;
+        }
+        /* 鼠标激活瞬间 */
+        /* a:active{
+            color: orange;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 
+        1.动态伪类 ===== 超链接默认是蓝色文本且自带下划线
+            注意事项：主要应用在超链接a标签上面，四个使用的时候必须按照顺序进行书写
+
+            a:link{}==================超链接访问前
+            a:visited{}===============超链接访问后
+            a:hover{}=================超链接悬停时
+            a:active{}================超链接激活瞬间
+        注意事项：
+            伪类选择器（：）前后，不能带任何空格
+        实际开发中：
+            会把hover单独拿出来使用：鼠标悬停的时候改变元素的样式
+     -->
+
+    <a href="#">百度一下</a>
+</body>
+</html>

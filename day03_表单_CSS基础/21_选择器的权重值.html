@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 单纯的使用类标签、id实现效果 */
+        /* 找到p标签修饰 */
+        /* p{
+            color: red;
+        } */
+
+        #one {
+            color: orange;
+        }
+        .p1 {
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        解析：不同的选择器修饰同一个元素的时候实现何种样式
+
+            不同的选择器修饰同一个元素的时候实现的样式，是以选择器的权重值大小来实现的
+                id选择器（100）>类选择器（10）>标签选择器（1）>通配符选择器（0）
+     -->
+
+    <div class="box">
+        <p class="p1" id="one">我是一个p标签</p>
+    </div>
+</body>
+</html>

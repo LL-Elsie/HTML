@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .p1{
+            background-color: yellow;
+        }
+        .box>.p1{
+            background-color: orange;
+        } */
+
+        .box>p{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        div>.p1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        1.CSS的层叠性
+            指的是不同的选择器或者不同样式表修饰同一个元素时，实现的是哪一种样式
+            涉及到了一个点：相同的属性会被覆盖，不同的属性会被保留下来
+            CSS的层叠性：主要与选择器的权重值有关系
+                不同的选择器修饰同一个元素的时候，权重值大的实现效果，权重值小的相同的属性被覆盖掉
+                权重指一样的，就与代码的执行顺序有关系
+
+     -->
+    <div class="box">
+        <p class="p1">我是div里面的p标签</p>
+    </div>
+</body>
+</html>

@@ -13,9 +13,45 @@
 h1>span {
     color: red;
 }
-
 .text {
     width: 500px;
     height: 146px;
     background-color: #d3d3d3;
+}
+
+/* 对span进行修饰 */
+div>.sp1 {
+    /* 加粗 */
+    font-weight: bold;
+    color: #a03c18;
+    background-color: #f4e2b0;
+}
+
+div>.sp2 {
+    font-weight: bold;
+    color: #e9b2eb;
+    background-color: #b9dee6;
+}
+
+div>.sp3 {
+    font-weight: bold;
+    color: #b63cc3;
+    background-color: #9df584;
+}
+
+div>.sp4 {
+    font-weight: bold;
+    color: #1116ca;
+}
+
+div>.sp5 {
+    font-weight: bold;
+    color: #5a0cff;
+    background-color: #da75d5;
+}
+
+div>.sp6 {
+    color: #b8241a;
+    /* 倾斜 */
+    font-style: italic;
 }

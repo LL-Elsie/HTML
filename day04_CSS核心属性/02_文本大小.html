@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 字体大小属性：font-size */
+        .pTwo {
+            font-size: 1em;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 得出结论：
+        页面中的字体大小为：16px； 一般情况下，浏览器中最小的字体就是 ：10/12px
+
+        字体大小取值单位：
+            px ===== 像素单位
+            pt ===== 磅值单位：12pt=16px
+            em ===== 相对单位：
+                相对于自己字体标签大小进行缩放的一个倍数
+                默认的情况下，1em=16px     2em=32px
+    -->
+    <p>我是原始的文本</p>
+    <p class="pTwo">我是修改的文本</p>
+</body>
+</html>

@@ -6,3 +6,28 @@ h3 {
     /* 文本颜色 */
     color: #ff4500;
 }
+
+/* 先让所有的li变成绿色 */
+ul>li {
+    background-color: green;
+}
+
+
+
+/* 单独第二个变成浅绿色 */
+.list {
+    background-color: yellowgreen;
+}
+
+/* 修饰文本颜色 */
+b {
+    color: deepskyblue;
+}
+
+i {
+    color: red;
+}
+
+u {
+    color: orange;
+}

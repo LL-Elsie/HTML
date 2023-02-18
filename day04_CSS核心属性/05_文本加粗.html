@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文本加粗属性 */
+        .pTwo {
+            font-weight: 900;
+        }
+        b {
+            font-weight: 400;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        div:hover {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        文本加粗属性：font-weight
+
+        问题：为啥p标签本身就是正常的字体，我还要学习：font-weight: 400;
+            答案：取值为400的时候为正常字体，可以让具有加粗效果的标签变为正常字体
+                    即取消：b strong h1-h6的加粗效果
+        问题：为啥有b标签，还需要学习：font-weight: 700/900;
+            答案：
+                1）能够给所有的标签实现加粗效果，没有必要单纯使用b标签
+                2）使用CSS属性可以节约代码结构
+                3）可以使用CSS属性完成划过效果
+            
+     -->
+    <p class="pOne">我是原始的文本</p>
+    <p class="pTwo">我是修改的文本</p>
+    <b>我是一个加粗标签</b>
+    <h1>我是一级标题标签</h1>
+    <div>我是一个div标签</div>
+</body>
+</html>

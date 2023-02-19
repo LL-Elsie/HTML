@@ -9,12 +9,24 @@
         /* 文本修饰线 */
         p {
             text-decoration: overline;
+            /* 多修饰线:多个属性值共用一个属性，并且使用空格隔开 */
+            text-decoration: underline line-through;
         }
+
+        /* u,s,del,a{
+            text-decoration: none;
+        }  */
+        /* 问题：如何实现给一个标签既添加下划线也添加删除线 */
     </style>
 </head>
 <body>
     <p>我是一个p标签</p>
     <u>我是一个u标签，里面放了文本</u>
+
     <s>我是一个删除线标签，我有添加删除线的功能</s>
+    <del>我是删除线</del>
+    <a href="#">我是超链接</a>
+    <br>
+
 </body>
 </html>

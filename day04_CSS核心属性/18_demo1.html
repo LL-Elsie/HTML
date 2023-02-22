@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 取消元素自带的内边距和外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 500px;
+            height: 2000px;border: 2px solid gray;
+            background-color: rgba(255,0,0,.5);
+            /* 调整文本大小 */
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 100px;
+            /* 调整盒子位置位于水平居中位置 */
+            margin: 0 auto;
+        }
+
+        /* 给body添加背景图片 */
+        body {
+            /* background-image: url(img/zhihu.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+            /* 背景图片大小 */
+            /* background-size: cover;
+            /* 背景颜色 */
+            /* background-color: #b8e5f8;   */
+
+            /* 复合属性 */
+            background: #b8e5f8 url(img/zhihu.png) fixed no-repeat 0px 0px/cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        知乎首页布局
+    </div>
+</body>
+</html>

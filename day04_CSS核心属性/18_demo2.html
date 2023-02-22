@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消元素自带的内边距和外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 本质含义：窗口的自适应 */
+        html,body {
+            height: 100%;
+        }
+        div {
+            height: 100%;
+        }
+        .box1 {
+            /* background-color: red; */
+            /* 添加背景图片 */
+            /* background-image: url(img/bg1.png); */
+            /* 取消平铺 */
+            /* background-repeat: no-repeat; */
+            /* 调整图片大小 */
+            /* background-size: cover; */
+            /* 添加背景固定 */
+            /* background-attachment: fixed; */
+            /* 复合属性 */
+            background: url(img/bg1.png) no-repeat 0px 0px/cover;
+        }
+        .box2 {
+            /* background-color: yellow; */
+            /* 添加背景图片 */
+            /* background-image: url(img/bg2.png); */
+            /* 取消平铺 */
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            background: url(img/bg2.png) no-repeat 0px 0px/cover;
+
+        }
+        .box3 {
+            /* background-color: blueviolet; */
+            /* 添加背景图片 */
+            /* background-image: url(img/bg3.png); */
+            /* 取消平铺 */
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            background: url(img/bg3.png) no-repeat 0px 0px/cover;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        分析：每一个盒子的大小应该为多大
+        宽度占整个屏幕的宽度
+        高度占整个屏幕的高度   给高度设置成：100%
+            为啥直接添加完100%后没有高度了----使用高度百分比的时候继承父元素的百分之多少
+     -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

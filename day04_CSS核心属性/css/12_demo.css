@@ -1,0 +1,62 @@
+/* 标题区域 */
+.title {
+    width: 904px;
+    height: 80px;
+    /* 文字的大小 */
+    font-size: 34px;
+    color: #ff6600;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;
+}
+.base {
+    /* 宽度高度 */
+    width: 904px;
+    height: 40px;
+    font-size: 24px;
+    /* 字体大小、行间距、首行缩进 */
+    line-height: 40px;
+    color: #66aeff;
+    text-indent: 32px;
+}
+
+.info1 {
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 32px;
+}
+
+.info2 {
+    width: 904px;
+    text-indent: 2em;
+    /* 水平对齐方式 */
+    text-align: justify;
+    line-height: 32px;
+    color: #68ff02;
+}
+
+.info3 {
+    width: 904px;
+    font-style: italic;
+    text-indent: 2em;
+    text-align: justify;
+    text-decoration: underline;
+    line-height: 32px;
+    color: #11ffff;
+}
+
+.info4 {
+    width: 904px;
+    text-indent: 2em;
+    letter-spacing: 10px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.info5 {
+    width: 904px;
+    font-weight: bold;
+    text-indent: 2em;
+    line-height: 32px;
+    color: #e88de8;
+}

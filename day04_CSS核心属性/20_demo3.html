@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 48px;
+            height: 48px;
+            border: 2px solid gray;
+        }
+        .box1 {
+            /* 背景图片 */
+            background-image: url(img/素材2.png);
+            /* 精灵图核心技术---调整位置 */
+            background-position: -10px -7px;
+        }
+
+        .box2 {
+            /* 背景图片 */
+            background-image: url(img/素材2.png);
+            background-position: -275px -7px;
+        }
+        /* 划过的时候显示成下面一排,必须使用hover----移动背景图片的位置 */
+        .box1:hover {
+            background-position: -10px -64px;
+        }
+
+        .box2:hover {
+            background-position: -275px -64px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        精灵图的案例
+     -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+</body>
+</html>

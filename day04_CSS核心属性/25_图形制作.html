@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;
+            height: 0;
+            /* background-color: red; */
+            border-top: 40px solid orange;
+            border-right: 40px solid yellow;
+            border-bottom: 40px solid blue;
+            border-left: 40px solid green;
+        }
+
+        .box2 {
+            width: 0px;
+            height: 0px;
+            /* border-top: 40px solid orange;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid rgba(0, 0, 0, 0); */
+            border: 40px solid transparent;
+            border-top: 40px solid green;
+            /* 透明色有两种情况
+                rgba() ; transparent
+            */
+        }
+
+        .box3 {
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            /* border-right: 40px solid yellow; */
+            border-bottom: 40px solid green;
+            border-left: 40px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>第一个图形--正方形</h1>
+    <div class="box1"></div>
+
+    <h1>第二个图形--三角形</h1>
+    <div class="box2"></div>
+
+    <h1>第二个图形-梯形</h1>
+    <div class="box3"></div>
+</body>
+</html>

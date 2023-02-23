@@ -8,9 +8,17 @@
     <style>
         ul {
             /* 类型 */
-            list-style-type: disc;
+            /* list-style-type: disc; */
             /* 图片 */
-            list-style-image: url(img/pic1.png);
+            /* list-style-image: url(img/pic1.png); */
+            /* 调整位置 */
+            /* list-style-position: inside; */
+
+            /* 复合属性 */
+            list-style: circle url(img/pic1.png) inside;
+        }
+        li {
+            border: 2px solid gray;
         }
     </style>
 </head>
@@ -31,7 +39,22 @@
             只要添加列表项图片，就会把类型（空心、实心、方块）给覆盖掉
             list-style-image:url(路径)
             注意事项：实际开发时不会使用列表图片作为列表项，大部分使用背景图作为列表项，因为背景图方便调整位置
-        3.
+
+        3.列表项位置
+            list-style-position:inside（里面）/outside（外面）
+            
+        讲解：
+            三个属性只对一个样式进行修饰----单一属性
+            复合属性：
+                列表的符合属性
+                    list-style:type image position
+                    注意事项：
+                        三个取值可以调整位置
+                        后面可以跟一个值也可以跟多个值
+
+        整理：
+            实际开发时，我们经常使用的一行代码是：
+                list-style:none----------取消列表项的项目类型
 
 
      -->

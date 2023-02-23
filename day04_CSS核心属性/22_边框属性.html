@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            /* 添加边框 */
+            /* border: 10px solid green; */
+            /* 单一属性 */
+            border-width: 10px;
+            border-style: solid;
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        边框
+            就是元素或者内容的一个边缘，可以理解成一个辅助线
+            属性： border----复合属性，后面跟了多个取值，且取值之间以空格隔开
+            取值：10px solid gray
+                10px------边框的粗细-----boeder-wideh
+                solid-----边框的样式-----border-style
+                gray------边框的颜色-----border-color
+            注意事项：边框加上后会撑大盒子---占位置的
+            问题：单一属性能否直接单独使用：
+                ---如果单独使用的时候，粗细和颜色不能实现效果，但是样式可以实现，默认3像素粗细、黑色的实线
+                    ---样式是一个必须值
+     -->
+    <div class="box">
+        我是一个普通的div盒子
+    </div>
+</body>
+</html>

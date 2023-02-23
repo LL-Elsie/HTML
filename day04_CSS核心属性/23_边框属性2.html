@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            /* 单一属性 */
+            border-width: 10px;
+            border-style: double;
+            border-color: aqua green yellow;
+            /* 
+                1）单一属性取值一个值的时候
+                border-width: v1;-----------------实现的是四个方向边框的粗细-v1上下左右
+                border-width: v1 v2;--------------实现的是四个方向边框的粗细-v1上下，v2左右
+                border-width: v1 v2 v3;-----------实现的是四个方向边框的粗细-v1上，v2左右，v3下
+                border-width: v1 v2 v3 v4;--------实现的是四个方向边框的粗细-v1上，v2右，v3下，v4左
+
+                取值研究：border-width:v1-v4---规律：四个值时，可以记忆为上右下左的记忆方向
+
+                2）边框颜色取值也可以取值为v1-v4
+                    取值内容设置颜色，代表方向同上
+                
+                3）边框样式取值也可以取值为v1-v4
+                    取值内容设置为边框样式，代表方向同上
+                        solid=------单实线
+                        dashed------虚线（线段）
+                        dotted------虚线（点状）
+                        double------双实线
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
